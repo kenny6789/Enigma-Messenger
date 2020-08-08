@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="To:"
+        android:textColor="#C0C0C0"
+        app:layout_constraintBottom_toBottomOf="@+id/edtContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtContact" />
+
+    <EditText
+        android:id="@+id/edtContact"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_message_rounded"
+        android:ems="10"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="#C0C0C0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpenContactList"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="@+id/edtContact"
+        app:layout_constraintStart_toEndOf="@+id/edtContact"
+        app:layout_constraintTop_toTopOf="@+id/edtContact" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_rounded"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="@+id/edtMessage"
+        app:layout_constraintStart_toEndOf="@+id/edtMessage"
+        app:layout_constraintTop_toTopOf="@+id/edtMessage" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_message"
+        android:layout_width="409dp"
+        android:layout_height="455dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtContact" />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/edittext_message_rounded"
+        android:textColor="#C0C0C0"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
