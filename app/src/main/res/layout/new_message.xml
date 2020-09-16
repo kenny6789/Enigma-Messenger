@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="@+id/edtMessage" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_message"
+        android:id="@+id/new_message_recyclerview"
         android:layout_width="409dp"
         android:layout_height="455dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

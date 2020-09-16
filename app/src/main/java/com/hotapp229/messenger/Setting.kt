@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.setting.*
 
 class Setting : AppCompatActivity() {
     private val enigma = SuperMagic()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.setting)
@@ -122,8 +124,11 @@ class Setting : AppCompatActivity() {
            // enigma.readRotorSetup(this)
             enigma.startEncrypting("The ministry will now consider if there are grounds for an investigation. An investigation could take up to 270 days but provisional measure can be imposed earlier if necessary. \"We are right now negotiating a free trade agreement with the EU and the EU may not like it, so it could be a complication in terms of that negotiation,” said Charles Finny. Potatoes New Zealand has filed a complaint of dumping with the Ministry of Business, Innovation and Employment. It’s also applied for tariffs to be imposed on the imports.", this)
             enigma.startEncrypting("Kcv nlcmccyt bdux fdg aacytjpd yb mgojc wdc uviglpz lpp jg gksdxlaiiyhlw. Rr wgaoogczuirmi fuqsa apbc au ie 270 nqzz stu ydqxmfyqefz eqeqxmb rov un lxhdrhw thurbkj bn qaemlklxq. \"Tu mfw vmmqf tet qbsbbslosac o izsy hhkfs uhgcbzczm rgoo qsi ZR idx gls OF cnc cid dyyp rf, ll nw dfexh jk w xudaiqdbidie lm cnzhp un pblp ptyaodwarnr,” vods Kpunxzl Qgfgq. Ozmnzazb Jcy Ipmshes kww lhrke o kavfxsvbr wo izlzqxl xmkj hsa Dgsjezxm se Zjktbdom, Ydgcqqvfzm nsu Vwbythbcti. Ej’i kwgs bsontfi xfu nfyqvhz wi ij wnvanhr xk ama nvrxtrv.", this)
+
+
+            //DBShowRecentMessage.deleteMessage("221989229")
         }
-    }
+}
 
 
 }
